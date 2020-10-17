@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "WebDongHoBTL"
+    }
+  },
+  "defaultProject": "WebDongHoBTL",
+  "cli": {
+    "analytics": "e82c1d17-c216-4ded-870d-c4cced2ca662"
+  }
 }
