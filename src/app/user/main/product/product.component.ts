@@ -5,19 +5,20 @@ import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-product',
-  templateUrl: './allproduct.component.html',
-  styleUrls: ['./allproduct.component.css']
+  templateUrl: './product.component.html',
+  styleUrls: ['./product.component.css']
 })
-export class AllproductComponent extends BaseComponent implements OnInit {
+export class ProductComponent extends BaseComponent implements OnInit {
 
   constructor(private injector:Injector) { 
     super(injector)
   }
-  allitem : any;
+  item : any;
   ngOnInit(): void {
     this._route.params.subscribe(params=>{
-      this._api.get("api/sanpham/get_san_pham").subscribe(res=>{
-        this.allitem = res;
+      var iddm = params["id"];
+      this._api.get("api/sanpham/get_san_pham_by_iddm/" + iddm).subscribe(res=>{
+        this.item = res;
         console.log(res);
       })
     })

@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'WebDongHoBTL'`, () => {
+  it(`should have as title 'WebBook'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('WebDongHoBTL');
+    expect(app.title).toEqual('WebBook');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('WebDongHoBTL app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('WebBook app is running!');
   });
 });
