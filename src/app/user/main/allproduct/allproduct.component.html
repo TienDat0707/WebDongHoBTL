@@ -37,36 +37,24 @@
                         <div class="hun-element-product--type-1">
                         <a href="detail-product1.html" class="pic-product">
                             <span class="gallery-product">
-                                
-                                <span class="item-gal">
-                                    <span class="image-gal" style="background-image: url(assets/images/p-18-1.jpg);"></span>	
-                                </span>
-
-                                <span class="item-gal">
-                                    <span class="image-gal" style="background-image: url(assets/images/p-18-2.jpg);"></span>
-                                </span>
-
-                                <span class="item-gal">
-                                    <span class="image-gal" style="background-image: url(assets/images/p-18-3.jpg);"></span>
-                                </span>
-
-                                <span class="item-gal">
-                                    <span class="image-gal" style="background-image: url(assets/images/p-18-4.jpg);"></span>
-                                </span>
+                              
+                                <a class="thumb-link" href="#"[routerLink] = "['/chitietsanpham',it.iD_SP]">
+                                    <img class="img-responsive"
+                                         src="../../../../assets/images/sanpham/{{it.anh_SP}}"
+                                         alt="Cherry tomato" style="width: 250px; height: 300px;margin: auto;">
+                                </a>
                             </span>
                         </a>
 
                         <div class="text-product">
                             <h6 class="name-product set-color">
-                                <a href="detail-product1.html">
-                                    Black Patterned T-Shirt
-                                </a>
+                              
+                                    <a href="#" [routerLink] = "['/chitietsanpham',it.iD_SP]" >{{it.ten_SP}}</a>
+                                
                             </h6>
 
                             <div class="price-product set-color">
-                                <span class="new-price">
-                                    $32.65
-                                </span>
+                                <a href="#">{{it.gia}}</a>
                             </div>
 
                             <div class="star-product">

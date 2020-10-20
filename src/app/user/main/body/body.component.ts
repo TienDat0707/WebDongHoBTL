@@ -16,9 +16,15 @@ export class BodyComponent extends BaseComponent implements OnInit {
   constructor(private injector: Injector, private http: HttpClient) { 
     super(injector)
   }t
-  itemnew: any;
-  newnew:any;
+  allitem : any;
   ngOnInit(): void {
+    this._route.params.subscribe(params=>{
+      this._api.get("api/sanpham/get_san_pham").subscribe(res=>{      
+        this.allitem = res;
+        console.log(this.allitem);
+      })
+    })
+  }
     // this._route.params.subscribe(params=>{
     //   console.log("hello admin");
     //   this.http.get("https://localhost:44374/api/sanpham/get_sanpham_new").subscribe(res=>{
@@ -34,7 +40,7 @@ export class BodyComponent extends BaseComponent implements OnInit {
     //     })
     //   })
     // })     
-  }
+  
   addcart(value){
     console.log(value);
     this._cart.addToCart(value);

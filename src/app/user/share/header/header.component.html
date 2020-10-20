@@ -1,153 +1,7 @@
 <header class="hun-section-header hun-header layout-1 style-sticky style-overlay style-icon-2 use-img-logo">
     <div class="hun-element-toolbar--type-1 set-color">
         <div class="container">
-            <div class="inner-toolbar">
-                <div class="text-toolbar d-none d-md-block">
-                    Free shipping for standard order over $100
-                </div>
-
-                <div class="group-features">
-                    <div class="text-toolbar d-none d-md-block">
-                        <a href="#">
-                            misoppe@example.com
-                        </a>
-                    </div>
-
-                    <div class="hun-element-account--type-1 set-color js-call-magnificpopup" data-popupinside="true">
-                        <a class="btn-open btn-acc mfp-inline js-open-popup" href="#account-form-01">
-                            Account
-                        </a>
-
-                        <div id="account-form-01" class="content-element mfp-hide">
-                            <div class="tabs-account">
-                                <!-- Login Tab -->
-                                <input id="account-form-01-login" type="radio" class="toggle-tab" name="account-form-01-toggle" checked>
-                                <label for="account-form-01-login" class="label-tab">Login</label>
-                                <div class="content-tab">
-                                    <h2 class="title-form">
-                                        Login
-                                    </h2>
-
-                                    <form>
-                                        <label>
-                                            <input class="input-field" type="text" placeholder="Username or Email">
-                                        </label>
-
-                                        <label>
-                                            <input class="input-field" type="password" placeholder="Password">
-                                        </label>
-
-                                        <label>
-                                            <input type="checkbox">
-                                            Remember me
-                                        </label>
-
-                                        <button>
-                                            Sign In
-                                        </button>
-                                    </form>
-                                </div>
-                                
-                                <!-- Register Tab -->
-                                <input id="account-form-01-register" type="radio" class="toggle-tab" name="account-form-01-toggle">
-                                <label for="account-form-01-register" class="label-tab">Register</label>
-                                <div class="content-tab">
-                                    <h2 class="title-form">
-                                        Register
-                                    </h2>
-
-                                    <form>
-                                        <label>
-                                            <input class="input-field" type="text" placeholder="Username">
-                                        </label>
-
-                                        <label>
-                                            <input class="input-field" type="text" placeholder="Email">
-                                        </label>
-
-                                        <label>
-                                            <input class="input-field" type="text" placeholder="Password">
-                                        </label>
-
-                                        <label>
-                                            <input class="input-field" type="text" placeholder="Confirm Password">
-                                        </label>
-
-                                        <button>
-                                            Sign Up
-                                        </button>
-                                    </form>
-                                </div>
-                                
-                                <!-- Lost Password Tab -->
-                                <input id="account-form-01-lost-password" type="radio" class="toggle-tab" name="account-form-01-toggle">
-                                <label for="account-form-01-lost-password" class="label-tab">Lost Password</label>
-                                <div class="content-tab">
-                                    <h2 class="title-form">
-                                        Reset Password
-                                    </h2>
-
-                                    <form>
-                                        <p class="description-form">
-                                            Please enter your username or email address. You will receive a link to create a new password via email.
-                                        </p>
-
-                                        <label>
-                                            <input class="input-field" type="text" placeholder="Username or Email">
-                                        </label>
-
-                                        <button>
-                                            Reset Password
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="hun-element-dropdown-menu--type-1">
-                        USD
-
-                        <ul class="sub-menu set-color">
-                            <li>
-                                <a href="#">
-                                    USD
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    EUR
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="hun-element-dropdown-menu--type-1">
-                        ENG
-
-                        <ul class="sub-menu set-color">
-                            <li>
-                                <a href="#">
-                                    English
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    French
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    Japan
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+           
         </div>
     </div>
 
@@ -157,7 +11,7 @@
                 <div class="logo-header">
                     <a href="#" class="text-logo set-color"></a>
 
-                    <a href="home1.html" class="main-logo">
+                    <a href="#" class="main-logo">
                         <img src="assets/images/icons/your-logo.png" alt="LOGO">
                     </a>
 
@@ -205,49 +59,40 @@
                     </div>
 
                     <div class="hun-element-cart--type-1 set-color">
-                        <a href="cart.html" class="btn-open btn-cart" data-count-cart="2">
+                        <a href="cart.html" class="btn-open btn-cart" >
                             <i class="icon ion-android-cart"></i>
+                            
                         </a>
 
                         <div class="content-cart">
                             <div class="total-cart">
                                 <span class="text-total">Total:</span>
 
-                                <span class="number-total">$108.00</span>
+                                <span class="number-total">{{totalprice}}</span>
                             </div>
 
                             <div class="products-cart">
                                 <div class="item-product">
                                     <a href="#" class="content-item">
-                                        <span class="pic-product" style="background-image: url(assets/images/p-06-1.jpg);"></span>
-
-                                        <span class="name-product">
-                                            Neck Tie Satin Blouse
-                                        </span>
-
-                                        <span class="num-price-product">
-                                            2 <span class="multiply-mark">×</span> $25.00
-                                        </span>
+                                        <ng-container *ngFor="let sp of itemcart">
+                                            <li class="kreen-mini-cart-item mini_cart_item">
+                                                <a href="javascrpit:void(0)" (click)="deleteCart(sp.iD_SP)" class="remove remove_from_cart_button">×</a>
+                                                <a href="#">
+                                                    <img src="../../../../assets/images/sanpham/{{sp.anh_SP}}"
+                                                         class="attachment-kreen_thumbnail size-kreen_thumbnail"
+                                                         alt="img" width="100" height="100">{{sp.ten_SP}}&nbsp;
+                                                </a>
+                                                <span class="quantity">{{sp.soluong}} × <span
+                                                        class="kreen-Price-amount amount"><span
+                                                        class="kreen-Price-currencySymbol"></span>{{sp.gia}}</span>VNĐ</span>
+                                            </li>
+                                        </ng-container>
                                     </a>
 
                                     <a href="#" class="remove-item">×</a>
                                 </div>
 
-                                <div class="item-product">
-                                    <a href="#" class="content-item">
-                                        <span class="pic-product" style="background-image: url(assets/images/p-16-1.jpg);"></span>
-
-                                        <span class="name-product">
-                                            Navy Long Sleeve Shirt
-                                        </span>
-
-                                        <span class="num-price-product">
-                                            2 <span class="multiply-mark">×</span> $25.00
-                                        </span>
-                                    </a>
-
-                                    <a href="#" class="remove-item">×</a>
-                                </div>
+                              
                             </div>
 
                             <div class="buttons-cart">

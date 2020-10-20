@@ -3,7 +3,7 @@
     <div class="inner-section">
         <div class="container">
             <ul class="breadcrumbs">
-                <li>
+                <!-- <li>
                     <a href="#">
                         <span>Home</span>
                     </a>
@@ -21,7 +21,7 @@
 
                 <li>
                     <span> Navy Long Sleeve Shirt</span>
-                </li>
+                </li> -->
             </ul>
         </div>
     </div>
@@ -37,49 +37,9 @@
                     <div class="col-lg-6">
                         <div class="images-product set-color">
                             <div class="img-slider js-call-slick" data-custom-dots="true">
-                                <div class="slide-slick js-call-magnificpopup" data-slick='{"adaptiveHeight": true, "fade": true, "speed": 300, "dots": true, "arrows": false, "autoplay": false, "infinite": false, "slidesToShow": 1, "slidesToScroll": 1}' data-gallery="true" data-verticalfit="false">
-
-                                    <div class="item-slick" data-inner-dot='<span class="inner-dot" class="img-dot" style="background-image: url(assets/images/p-detail-01-1.jpg)"></span>'>
-                                        <div class="wrap-img">
-                                            <img src="assets/images/p-detail-01-1.jpg" alt="IMG">
-
-                                            <a class="popup-img mfp-image js-open-popup" href="assets/images/p-detail-01-1.jpg"></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="item-slick" data-inner-dot='<span class="inner-dot" class="img-dot" style="background-image: url(assets/images/p-detail-01-2.jpg)"></span>'>
-                                        <div class="wrap-img">
-                                            <img src="assets/images/p-detail-01-2.jpg" alt="IMG">
-
-                                            <a class="popup-img mfp-image js-open-popup" href="assets/images/p-detail-01-2.jpg"></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="item-slick" data-inner-dot='<span class="inner-dot" class="img-dot" style="background-image: url(assets/images/p-detail-01-3.jpg)"></span>'>
-                                        <div class="wrap-img">
-                                            <img src="assets/images/p-detail-01-3.jpg" alt="IMG">
-
-                                            <a class="popup-img mfp-image js-open-popup" href="assets/images/p-detail-01-3.jpg"></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="item-slick" data-inner-dot='<span class="inner-dot" class="img-dot" style="background-image: url(assets/images/p-detail-01-4.jpg)"></span>'>
-                                        <div class="wrap-img">
-                                            <img src="assets/images/p-detail-01-4.jpg" alt="IMG">
-
-                                            <a class="popup-img mfp-image js-open-popup" href="assets/images/p-detail-01-4.jpg"></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="item-slick" data-inner-dot='<span class="inner-dot" class="img-dot" style="background-image: url(assets/images/p-detail-01-5.jpg)"></span>'>
-                                        <div class="wrap-img">
-                                            <img src="assets/images/p-detail-01-5.jpg" alt="IMG">
-
-                                            <a class="popup-img mfp-image js-open-popup" href="assets/images/p-detail-01-5.jpg"></a>
-                                        </div>
-                                    </div>
-                                </div>
-
+                                    <img alt="img"
+                                         src="../../../../assets/images/sanpham/{{ct.anh_SP}}"
+                                         alt="Cherry tomato" style="width: 400px; height: 500px;">
                                 <div class="dots-slick"></div>
                             </div>
                         </div>
@@ -88,7 +48,7 @@
                     <div class="col-lg-6">
                         <div class="text-product">
                             <h3 class="name-product">
-                                Navy Long Sleeve Shirt
+                                <h1 class="product_title entry-title">{{ct.ten_SP}}</h1>
                             </h3>
 
                             <div class="star-product">
@@ -105,11 +65,11 @@
 
                             <div class="price-product">
                                 <span class="new-price">
-                                    $32.85
+                                   ${{ct.gia}}
                                 </span>
 
                                 <span class="old-price">
-                                    $38.65
+                                   
                                 </span>
                             </div>
 
@@ -169,7 +129,8 @@
                                         <span class="btn-num-product-up"></span>
                                     </div>
 
-                                    <button class="btn-addcart">
+                                    
+                                    <button class="btn-addcart" type="button" (click)="add_cart(ct)">
                                         Add To Cart
                                     </button>
                                 </div>								
@@ -238,486 +199,5 @@
 <!-- end Detail Product -->
 
 <!-- Products -->
-<div class="hun-section-products layout-slider js-call-magnificpopup hide-link-view-all outer-hun-element-product--type-1 price-color ratio-img-3-4 show-space-bottom">
-    <div class="inner-section">
-        <div class="container">
-            <div class="heading-section">
-                <h3 class="title-sec">
-                    Related Products
-                </h3>
-            </div>
 
-            <div class="slide-section js-call-slick">
-                <div class="slide-slick" data-slick='{"dots": false, "arrows": true, "autoplay": false, "infinite": false, "slidesToShow": 4, "slidesToScroll": 4, "responsive": [{"breakpoint": 1199, "settings": {"slidesToShow": 3, "slidesToScroll": 3}}, {"breakpoint": 991, "settings": {"slidesToShow": 2, "slidesToScroll": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 1, "slidesToScroll": 1}}, {"breakpoint": 575, "settings": {"slidesToShow": 1, "slidesToScroll": 1}}]}'>
-
-                    <div class="item-slick">
-                        <div class="hun-element-product--type-1">
-                            <a href="detail-product1.html" class="pic-product">
-                                <span class="gallery-product">
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-18-1.jpg);"></span>	
-                                    </span>
-
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-18-2.jpg);"></span>
-                                    </span>
-
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-18-3.jpg);"></span>
-                                    </span>
-
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-18-4.jpg);"></span>
-                                    </span>
-                                </span>
-                            </a>
-
-                            <div class="text-product">
-                                <h6 class="name-product set-color">
-                                    <a href="detail-product1.html">
-                                        Black Patterned T-Shirt
-                                    </a>
-                                </h6>
-
-                                <div class="price-product set-color">
-                                    <span class="new-price">
-                                        $32.65
-                                    </span>
-                                </div>
-
-                                <div class="star-product">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-full"></i>
-                                </div>
-                            </div>
-
-                            <div class="buttons-product">
-                                <a href="#" class="btn-addcart set-color">
-                                    Add To Cart +
-                                </a>
-
-                                <a class="btn-quickview set-color mfp-inline js-open-popup" href="#quickview-popup-01" title="Quick View">
-                                    <i class="icon-eye"></i>
-                                </a>
-
-                                <a href="#" class="btn-addwish set-color" title="Add To Wishlist">
-                                    <i class="fa fa-heart-o"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item-slick">
-                        <div class="hun-element-product--type-1">
-                            <div class="labels-product set-color">
-                                <span class="item-label label-new">New</span>
-                            </div>
-
-                            <a href="detail-product1.html" class="pic-product">
-                                <span class="gallery-product">
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-04-1.jpg);"></span>
-                                    </span>
-
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-04-2.jpg);"></span>
-                                    </span>
-
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-04-3.jpg);"></span>
-                                    </span>
-                                </span>
-                            </a>
-
-                            <div class="text-product">
-                                <h6 class="name-product set-color">
-                                    <a href="detail-product1.html">
-                                        Black Ribbed Bodysuit
-                                    </a>
-                                </h6>
-
-                                <div class="price-product set-color">
-                                    <span class="new-price">
-                                        $32.65
-                                    </span>
-                                </div>
-
-                                <div class="star-product">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-full"></i>
-                                </div>
-                            </div>
-
-                            <div class="buttons-product">
-                                <a href="#" class="btn-addcart set-color">
-                                    Add To Cart +
-                                </a>
-
-                                <a class="btn-quickview set-color mfp-inline js-open-popup" href="#quickview-popup-01" title="Quick View">
-                                    <i class="icon-eye"></i>
-                                </a>
-
-                                <a href="#" class="btn-addwish set-color" title="Add To Wishlist">
-                                    <i class="fa fa-heart-o"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item-slick">
-                        <div class="hun-element-product--type-1">
-                            <a href="detail-product1.html" class="pic-product">
-                                <span class="gallery-product">
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-06-1.jpg);"></span>
-                                    </span>
-
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-06-2.jpg);"></span>
-                                    </span>
-
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-06-3.jpg);"></span>
-                                    </span>
-
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-06-4.jpg);"></span>
-                                    </span>
-                                </span>
-                            </a>
-
-                            <div class="text-product">
-                                <h6 class="name-product set-color">
-                                    <a href="detail-product1.html">
-                                        Neck Tie Satin Blouse
-                                    </a>
-                                </h6>
-
-                                <div class="price-product set-color">
-                                    <span class="new-price">
-                                        $32.65
-                                    </span>
-                                </div>
-
-                                <div class="star-product">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-full"></i>
-                                </div>
-                            </div>
-
-                            <div class="buttons-product">
-                                <a href="#" class="btn-addcart set-color">
-                                    Add To Cart +
-                                </a>
-
-                                <a class="btn-quickview set-color mfp-inline js-open-popup" href="#quickview-popup-01" title="Quick View">
-                                    <i class="icon-eye"></i>
-                                </a>
-
-                                <a href="#" class="btn-addwish set-color" title="Add To Wishlist">
-                                    <i class="fa fa-heart-o"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item-slick">
-                        <div class="hun-element-product--type-1">
-                            <a href="detail-product1.html" class="pic-product">
-                                <span class="gallery-product">
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-05-3.jpg);"></span>
-                                    </span>
-
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-05-2.jpg);"></span>
-                                    </span>
-
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-05-1.jpg);"></span>
-                                    </span>
-                                </span>
-                            </a>
-
-                            <div class="text-product">
-                                <h6 class="name-product set-color">
-                                    <a href="detail-product1.html">
-                                        Black Blouse
-                                    </a>
-                                </h6>
-
-                                <div class="price-product set-color">
-                                    <span class="new-price">
-                                        $32.65
-                                    </span>
-                                </div>
-
-                                <div class="star-product">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-full"></i>
-                                </div>
-                            </div>
-
-                            <div class="buttons-product">
-                                <a href="#" class="btn-addcart set-color">
-                                    Add To Cart +
-                                </a>
-
-                                <a class="btn-quickview set-color mfp-inline js-open-popup" href="#quickview-popup-01" title="Quick View">
-                                    <i class="icon-eye"></i>
-                                </a>
-
-                                <a href="#" class="btn-addwish set-color" title="Add To Wishlist">
-                                    <i class="fa fa-heart-o"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item-slick">
-                        <div class="hun-element-product--type-1">
-                            <a href="detail-product1.html" class="pic-product">
-                                <span class="gallery-product">
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-21-1.jpg);"></span>	
-                                    </span>
-
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-21-2.jpg);"></span>
-                                    </span>
-
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-21-3.jpg);"></span>
-                                    </span>
-                                </span>
-                            </a>
-
-                            <div class="text-product">
-                                <h6 class="name-product set-color">
-                                    <a href="detail-product1.html">
-                                        Pocket Detailed T-Shirt
-                                    </a>
-                                </h6>
-
-                                <div class="price-product set-color">
-                                    <span class="new-price">
-                                        $32.65
-                                    </span>
-                                </div>
-
-                                <div class="star-product">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-full"></i>
-                                </div>
-                            </div>
-
-                            <div class="buttons-product">
-                                <a href="#" class="btn-addcart set-color">
-                                    Add To Cart +
-                                </a>
-
-                                <a class="btn-quickview set-color mfp-inline js-open-popup" href="#quickview-popup-01" title="Quick View">
-                                    <i class="icon-eye"></i>
-                                </a>
-
-                                <a href="#" class="btn-addwish set-color" title="Add To Wishlist">
-                                    <i class="fa fa-heart-o"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item-slick">
-                        <div class="hun-element-product--type-1">
-                            <a href="detail-product1.html" class="pic-product">
-                                <span class="gallery-product">
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-09-1.jpg);"></span>	
-                                    </span>
-
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-09-3.jpg);"></span>
-                                    </span>
-
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-09-4.jpg);"></span>
-                                    </span>
-                                </span>
-                            </a>
-
-                            <div class="text-product">
-                                <h6 class="name-product set-color">
-                                    <a href="detail-product1.html">
-                                        Blue Classic Neck Shirt
-                                    </a>
-                                </h6>
-
-                                <div class="price-product set-color">
-                                    <span class="new-price">
-                                        $32.65
-                                    </span>
-                                </div>
-
-                                <div class="star-product">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-full"></i>
-                                </div>
-                            </div>
-
-                            <div class="buttons-product">
-                                <a href="#" class="btn-addcart set-color">
-                                    Add To Cart +
-                                </a>
-
-                                <a class="btn-quickview set-color mfp-inline js-open-popup" href="#quickview-popup-01" title="Quick View">
-                                    <i class="icon-eye"></i>
-                                </a>
-
-                                <a href="#" class="btn-addwish set-color" title="Add To Wishlist">
-                                    <i class="fa fa-heart-o"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item-slick">
-                        <div class="hun-element-product--type-1">
-                            <a href="detail-product1.html" class="pic-product">
-                                <span class="gallery-product">
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-10-1.jpg);"></span>	
-                                    </span>
-
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-10-2.jpg);"></span>
-                                    </span>
-
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-10-3.jpg);"></span>
-                                    </span>
-                                </span>
-                            </a>
-
-                            <div class="text-product">
-                                <h6 class="name-product set-color">
-                                    <a href="detail-product1.html">
-                                        Navy Fur Coat
-                                    </a>
-                                </h6>
-
-                                <div class="price-product set-color">
-                                    <span class="new-price">
-                                        $32.65
-                                    </span>
-                                </div>
-
-                                <div class="star-product">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-full"></i>
-                                </div>
-                            </div>
-
-                            <div class="buttons-product">
-                                <a href="#" class="btn-addcart set-color">
-                                    Add To Cart +
-                                </a>
-
-                                <a class="btn-quickview set-color mfp-inline js-open-popup" href="#quickview-popup-01" title="Quick View">
-                                    <i class="icon-eye"></i>
-                                </a>
-
-                                <a href="#" class="btn-addwish set-color" title="Add To Wishlist">
-                                    <i class="fa fa-heart-o"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item-slick">
-                        <div class="hun-element-product--type-1">
-                            <a href="detail-product1.html" class="pic-product">
-                                <span class="gallery-product">
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-16-1.jpg);"></span>	
-                                    </span>
-
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-16-2.jpg);"></span>
-                                    </span>
-
-                                    <span class="item-gal">
-                                        <span class="image-gal" style="background-image: url(assets/images/p-16-3.jpg);"></span>
-                                    </span>
-                                </span>
-                            </a>
-
-                            <div class="text-product">
-                                <h6 class="name-product set-color">
-                                    <a href="detail-product1.html">
-                                        Navy Long Sleeve Shirt
-                                    </a>
-                                </h6>
-
-                                <div class="price-product set-color">
-                                    <span class="new-price">
-                                        $32.65
-                                    </span>
-                                </div>
-
-                                <div class="star-product">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-full"></i>
-                                </div>
-                            </div>
-
-                            <div class="buttons-product">
-                                <a href="#" class="btn-addcart set-color">
-                                    Add To Cart +
-                                </a>
-
-                                <a class="btn-quickview set-color mfp-inline js-open-popup" href="#quickview-popup-01" title="Quick View">
-                                    <i class="icon-eye"></i>
-                                </a>
-
-                                <a href="#" class="btn-addwish set-color" title="Add To Wishlist">
-                                    <i class="fa fa-heart-o"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="arrows-slick">
-                    <a class="item-arrow prev-slick set-color"></a>
-                    <a href="#" class="link-view-all set-color">View All Products</a>
-                    <a class="item-arrow next-slick set-color"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <!-- end Products -->
