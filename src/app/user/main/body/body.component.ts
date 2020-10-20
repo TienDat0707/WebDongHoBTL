@@ -19,21 +19,21 @@ export class BodyComponent extends BaseComponent implements OnInit {
   itemnew: any;
   newnew:any;
   ngOnInit(): void {
-    this._route.params.subscribe(params=>{
-      console.log("hello admin");
-      this.http.get("https://localhost:44374/api/sanpham/get_sanpham_new").subscribe(res=>{
-        this.itemnew = res;
-        setTimeout(()=>{
-          this.loadScripts();
-        })
-      })
-      this.http.get("https://localhost:44374/api/tintuc/get_tintuc_new").subscribe(res=>{
-        this.newnew = res;
-        setTimeout(()=>{
-          this.loadScripts();
-        })
-      })
-    })     
+    // this._route.params.subscribe(params=>{
+    //   console.log("hello admin");
+    //   this.http.get("https://localhost:44374/api/sanpham/get_sanpham_new").subscribe(res=>{
+    //     this.itemnew = res;
+    //     setTimeout(()=>{
+    //       this.loadScripts();
+    //     })
+    //   })
+    //   this.http.get("https://localhost:44374/api/tintuc/get_tintuc_new").subscribe(res=>{
+    //     this.newnew = res;
+    //     setTimeout(()=>{
+    //       this.loadScripts();
+    //     })
+    //   })
+    // })     
   }
   addcart(value){
     console.log(value);

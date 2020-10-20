@@ -16,9 +16,9 @@ export class AllproductComponent extends BaseComponent implements OnInit {
   allitem : any;
   ngOnInit(): void {
     this._route.params.subscribe(params=>{
-      this._api.get("api/sanpham/get_san_pham").subscribe(res=>{
+      this._api.get("api/sanpham/get_san_pham").subscribe(res=>{      
         this.allitem = res;
-        console.log(res);
+        console.log(this.allitem);
       })
     })
   }

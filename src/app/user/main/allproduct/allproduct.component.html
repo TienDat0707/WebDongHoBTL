@@ -28,14 +28,13 @@
 <!-- All Products -->
 <div class="hun-section-all-products layout-1 js-call-magnificpopup full-width outer-hun-element-product--type-1 price-color ratio-img-3-4 price-color show-space-bottom">
     <div class="inner-section">
-        <div class="container">
-          
-
-            
+        <div class="container">            
             <div class="row">
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <ng-container *ngFor="let it of allitem">
                     
-                    <div class="hun-element-product--type-1">
+                    <div class="col-md-6 col-lg-4 col-xl-3">                   
+                   
+                        <div class="hun-element-product--type-1">
                         <a href="detail-product1.html" class="pic-product">
                             <span class="gallery-product">
                                 
@@ -92,8 +91,10 @@
                                 <i class="fa fa-heart-o"></i>
                             </a>
                         </div>
+                        </div>
+                   
                     </div>
-                </div>
+                </ng-container>
             </div>
 
             <div class="buttons-section text-center">
