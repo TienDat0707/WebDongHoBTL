@@ -1,58 +1,399 @@
-<div class="banner-wrapper has_background">
-    <img src="../../../../assets/images/banner7.jpg"
-         class="img-responsive attachment-1920x447 size-1920x447" alt="img">
-    <div class="banner-wrapper-inner">
-        <h1 class="page-title">Tin tức</h1>
-        <div role="navigation" aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
-            <ul class="trail-items breadcrumb">
-                <li class="trail-item trail-begin"><a href="index.html"><span>Trang chủ</span></a></li>
-                <li class="trail-item trail-end active"><span>Tin tức</span>
+<!-- Page Title -->
+<div class="hun-section-page-title layout-1 set-color text-center off-parallax show-bg-img show-overlay-color show-space-bottom">
+    <div class="inner-section">
+        <div class="bg-section parallax100"><span class="inner-parallax" style="background-image: url(assets/images/page-title-01.jpg);"></span></div>
+
+        <div class="container">
+            <h2 class="main-title">
+                BLOG
+            </h2>
+
+            <ul class="breadcrumbs">
+                <li>
+                    <a href="#">
+                        <span>Home</span>
+                    </a>
+
+                    <span class="breadcrumb-divider"></span>
                 </li>
-            </ul>
+
+                <li>
+                    <span> Blog</span>
+                </li>
+            </ul>	
         </div>
     </div>
 </div>
-<div class="main-container no-sidebar">
-    <!-- POST LAYOUT -->
-    <div class="container">
-        <div class="row">
-            <div class="main-content col-md-12 col-sm-12">
-                <div class="blog-standard content-post">
-                    <ng-container *ngFor="let it of tt">
-                        <article
-                            class="post-item post-standard post-195 post type-post status-publish format-standard has-post-thumbnail hentry category-light category-table category-life-style tag-light tag-life-style">
-                        <div class="post-thumb">
-                            <a href="#"><img
-                                src="../../../../assets/images/tintuc/{{it.hinhanh}}"
-                                    class="img-responsive attachment-1170x768 size-1170x768" alt="img" style="width: 1500px; height: 500px;"></a></div>
-                        <div class="post-info">
-                            <h2 class="post-title"><a href="#"[routerLink] = "['/chitiettintuc',it.matt]">{{it.tieude}}</a></h2>
-                            <div class="post-meta">
-                                <div class="date">
-                                    <a href="#">
-                                        {{it.ngaydang | date : 'dd/MM/yyyy'}} </a>
+<!-- end Page Title -->
+
+<!-- All Blog -->
+<div class="hun-section-all-blog layout-1 img-full show-space-bottom">
+    <div class="inner-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-content">
+                    <div class="content-sec">
+                        <div class="list-post">
+                            <article class="hun-element-post--type-2 has-post-thumbnail">
+                                <div class="pic-post">
+                                    <a href="blog-detail.html">
+                                        <img src="assets/images/blog-01.jpg" alt="IMG">
+                                    </a>
                                 </div>
-                                <div class="post-author">
-                                    By:<a href="#">
-                                    admin </a>
+
+                                <div class="text-post">
+                                    <h3 class="title-post set-color">
+                                        <a href="blog-detail.html">
+                                            6 Best Ways to Wear Dresses in the Winter
+                                        </a>
+                                    </h3>
+
+                                    <div class="meta-info-post set-color">
+                                        <span class="item-info">
+                                            By <a href="#">Admin</a>
+                                        </span>
+
+                                        <span class="item-info">
+                                            <span>September 30, 2019</span>
+                                        </span>
+
+                                        <span class="item-info">
+                                            <a href="#">StreetStyle</a>, 
+                                            <a href="#">Fashion</a>, 
+                                            <a href="#">Couple</a>
+                                        </span>
+
+                                        <span class="item-info">
+                                            <span>15 Comments</span>
+                                        </span>
+                                    </div>
+
+                                    <div class="description-post">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus sed lectus vulputate tincidunt. Sed in convallis libero, in vulputate dui. Sed metus risus, ullamcorper eget ante vitae, iaculis congue lectus. Duis lacinia in dui vel tristique ullamcorper eget ante vitae.
+                                    </div>
+
+                                    <a href="blog-detail.html" class="link-post set-color">
+                                        Continue Reading
+                                    </a>
+                                </div>
+                            </article>
+
+                            <article class="hun-element-post--type-2 has-post-thumbnail">
+                                <div class="pic-post">
+                                    <a href="blog-detail.html">
+                                        <img src="assets/images/blog-02.jpg" alt="IMG">
+                                    </a>
+                                </div>
+
+                                <div class="text-post">
+                                    <h3 class="title-post set-color">
+                                        <a href="blog-detail.html">
+                                            The Fashion News You Missed This Week
+                                        </a>
+                                    </h3>
+
+                                    <div class="meta-info-post set-color">
+                                        <span class="item-info">
+                                            By <a href="#">Admin</a>
+                                        </span>
+
+                                        <span class="item-info">
+                                            <span>September 30, 2019</span>
+                                        </span>
+
+                                        <span class="item-info">
+                                            <a href="#">StreetStyle</a>, 
+                                            <a href="#">Fashion</a>, 
+                                            <a href="#">Couple</a>
+                                        </span>
+
+                                        <span class="item-info">
+                                            <span>15 Comments</span>
+                                        </span>
+                                    </div>
+
+                                    <div class="description-post">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus sed lectus vulputate tincidunt. Sed in convallis libero, in vulputate dui. Sed metus risus, ullamcorper eget ante vitae, iaculis congue lectus. Duis lacinia in dui vel tristique ullamcorper eget ante vitae.
+                                    </div>
+
+                                    <a href="blog-detail.html" class="link-post set-color">
+                                        Continue Reading
+                                    </a>
+                                </div>
+                            </article>
+
+                            <article class="hun-element-post--type-2 has-post-thumbnail">
+                                <div class="pic-post">
+                                    <a href="blog-detail.html">
+                                        <img src="assets/images/blog-03.jpg" alt="IMG">
+                                    </a>
+                                </div>
+
+                                <div class="text-post">
+                                    <h3 class="title-post set-color">
+                                        <a href="blog-detail.html">
+                                            How to Style for Men Every Day of the Week
+                                        </a>
+                                    </h3>
+
+                                    <div class="meta-info-post set-color">
+                                        <span class="item-info">
+                                            By <a href="#">Admin</a>
+                                        </span>
+
+                                        <span class="item-info">
+                                            <span>September 30, 2019</span>
+                                        </span>
+
+                                        <span class="item-info">
+                                            <a href="#">StreetStyle</a>, 
+                                            <a href="#">Fashion</a>, 
+                                            <a href="#">Couple</a>
+                                        </span>
+
+                                        <span class="item-info">
+                                            <span>15 Comments</span>
+                                        </span>
+                                    </div>
+
+                                    <div class="description-post">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus sed lectus vulputate tincidunt. Sed in convallis libero, in vulputate dui. Sed metus risus, ullamcorper eget ante vitae, iaculis congue lectus. Duis lacinia in dui vel tristique ullamcorper eget ante vitae.
+                                    </div>
+
+                                    <a href="blog-detail.html" class="link-post set-color">
+                                        Continue Reading
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="loop-pagination set-color">
+                            <ul>
+                                <li>
+                                    <a class="next page-numbers" href="#"><i class="icon ion-chevron-left"></i></a>
+                                </li>
+
+                                <li>
+                                    <span class="page-numbers current">1</span>
+                                </li>
+
+                                <li>
+                                    <a class="page-numbers" href="#">2</a>
+                                </li> 
+
+                                <li>
+                                    <a class="page-numbers" href="#">3</a>
+                                </li>
+
+                                <li>
+                                    <a class="next page-numbers" href="#"><i class="icon ion-chevron-right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sidebar js-call-sticky-sidebar">
+                    <div class="hun-element-sidebar--type-1 set-color">
+                        <div class="widget widget_search">
+                            <form>
+                                <label>
+                                    <input type="text" placeholder="Search">
+                                </label>
+
+                                <button>
+                                    <i class="icon ion-android-search"></i>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="widget widget_categories">
+                            <h3 class="title-widget">
+                                Categories
+                            </h3>
+
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Fashion
+                                    </a>
+
+                                    <span class="count">
+                                        (15)
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Beauty
+                                    </a>
+
+                                    <span class="count">
+                                        (09)
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Street Style 
+                                    </a>
+
+                                    <span class="count">
+                                        (28)
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Life Style
+                                    </a>
+
+                                    <span class="count">
+                                        (13)
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        DIY & Crafts
+                                    </a>
+
+                                    <span class="count">
+                                        (30)
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Fashion
+                                    </a>
+
+                                    <span class="count">
+                                        (15)
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Beauty
+                                    </a>
+
+                                    <span class="count">
+                                        (09)
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Street Style 
+                                    </a>
+
+                                    <span class="count">
+                                        (28)
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="widget hun-widget-posts">
+                            <h3 class="title-widget">
+                                Recent Posts
+                            </h3>
+
+                            <div class="list-post">
+                                <div class="item-post">
+                                    <a href="blog-detail.html" class="pic-post" style="background-image: url(assets/images/blog-04.jpg);"></a>
+
+                                    <div class="text-post">
+                                        <h4 class="title-post">
+                                            <a href="blog-detail.html">
+                                                6 Best Ways to Wear Dresses in the Winter
+                                            </a>
+                                        </h4>
+
+                                        <div class="date-post">
+                                            September 30, 2019
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item-post">
+                                    <a href="blog-detail.html" class="pic-post" style="background-image: url(assets/images/blog-05.jpg);"></a>
+
+                                    <div class="text-post">
+                                        <h4 class="title-post">
+                                            <a href="blog-detail.html">
+                                                The Fashion News You Missed This Week
+                                            </a>
+                                        </h4>
+
+                                        <div class="date-post">
+                                            September 30, 2019
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item-post">
+                                    <a href="blog-detail.html" class="pic-post" style="background-image: url(assets/images/blog-09.jpg);"></a>
+
+                                    <div class="text-post">
+                                        <h4 class="title-post">
+                                            <a href="blog-detail.html">
+                                                How to Style for Women Every Day of the Week
+                                            </a>
+                                        </h4>
+
+                                        <div class="date-post">
+                                            September 30, 2019
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="post-content">
-                            {{it.tomtat}}
+
+                        <div class="widget widget_tag_cloud">
+                            <h3 class="title-widget">
+                                Tags
+                            </h3>
+
+                            <div class="tagcloud">
+                                <a href="#" class="tag-cloud-link">
+                                    Fashion
+                                </a>
+
+                                <a href="#" class="tag-cloud-link">
+                                    Lifestyle
+                                </a>
+
+                                <a href="#" class="tag-cloud-link">
+                                    Denim
+                                </a>
+
+                                <a href="#" class="tag-cloud-link">
+                                    Streetstyle
+                                </a>
+
+                                <a href="#" class="tag-cloud-link">
+                                    Crafts
+                                </a>
+
+                                <a href="#" class="tag-cloud-link">
+                                    Fashion
+                                </a>
+
+                                <a href="#" class="tag-cloud-link">
+                                    Lifestyle
+                                </a>
+
+                                <a href="#" class="tag-cloud-link">
+                                    Denim
+                                </a>
+                            </div>
                         </div>
-                        <a href="#" class="readmore">Xem thêm</a>
-                    </article>
-                    </ng-container>
-                </div>
-                <nav class="navigation pagination">
-                    <div class="nav-links">
-                        <span class="page-numbers current">1</span>
-                        <a class="page-numbers" href="#">2</a>
-                        <a class="next page-numbers" href="#"><i class="fa fa-angle-right"></i></a>
                     </div>
-                </nav>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<!-- end All Blog -->
