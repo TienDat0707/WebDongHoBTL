@@ -24,16 +24,17 @@ export class HeaderComponent extends BaseComponent implements OnInit {
         setTimeout(()=>{
           this.loadScripts();
         })
-      })
+      }) 
       this._api.get('api/Loaisanpham/get_loai_san_pham').subscribe(res=>{
         this.itemldm = res;
         setTimeout(()=>{
           this.loadScripts();
         })
       })
-    })
+    }) 
     this._cart.items.subscribe(res=>{
       this.itemcart = res;
+      console.log(res);
       this.totalprice = 0;
       this.totalproduce = 0;
       for(let i of res){
@@ -46,4 +47,5 @@ export class HeaderComponent extends BaseComponent implements OnInit {
     this._cart.deleteItem(id);
     alert("Xóa thành công")
   }
+  
 }

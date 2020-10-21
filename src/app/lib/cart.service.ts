@@ -23,7 +23,7 @@ export class CartService {
       local_storage = JSON.parse(localStorage.getItem('cart'));
       let ok = true;
       for (let x of local_storage) {
-        if (x.masp == item.masp) {
+        if (x.iD_SP == item.iD_SP) {
           x.soluong += 1;
           ok = false;
           break;
@@ -46,7 +46,7 @@ export class CartService {
   }
 
   deleteItem(masp) {
-    let local_storage = this.getItems().filter((x) => x.masp != masp);
+    let local_storage = this.getItems().filter((x) => x.iD_SP != masp);
     localStorage.setItem('cart', JSON.stringify(local_storage));
     this.itemsSubject.next(local_storage);
   }
@@ -54,7 +54,7 @@ export class CartService {
   addQty(item) {
     let local_storage = JSON.parse(localStorage.getItem('cart'));
     for (let x of local_storage) {
-      if (x.masp == item.masp) {
+      if (x.iD_SP == item.masp) {
         x.soluong = item.soluong;
         break;
       }

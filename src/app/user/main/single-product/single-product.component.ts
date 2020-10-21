@@ -35,4 +35,7 @@ export class SingleProductComponent extends BaseComponent implements OnInit {
     this._cart.addToCart(ct);
     alert('Thêm thành công!'); 
   }
+  addQty(ct, quantity){ 
+    ct.soluong =  quantity;
+  }
 }

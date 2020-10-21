@@ -76,33 +76,33 @@
                                     <a href="#" class="content-item">
                                         <ng-container *ngFor="let sp of itemcart">
                                             <li class="kreen-mini-cart-item mini_cart_item">
-                                                <a href="javascrpit:void(0)" (click)="deleteCart(sp.iD_SP)" class="remove remove_from_cart_button">×</a>
+                                               
                                                 <a href="#">
                                                     <img src="../../../../assets/images/sanpham/{{sp.anh_SP}}"
                                                          class="attachment-kreen_thumbnail size-kreen_thumbnail"
-                                                         alt="img" width="100" height="100">{{sp.ten_SP}}&nbsp;
+                                                         alt="img" style="float:left"  width="100" height="100">{{sp.ten_SP}}&nbsp;
                                                 </a>
                                                 <span class="quantity">{{sp.soluong}} × <span
                                                         class="kreen-Price-amount amount"><span
                                                         class="kreen-Price-currencySymbol"></span>{{sp.gia}}</span>VNĐ</span>
                                             </li>
-                                        </ng-container>
-                                    </a>
+                                        
 
-                                    <a href="#" class="remove-item">×</a>
+                                    <a href="javascrpit:void(0)" (click)="deleteCart(sp.iD_SP)" class="remove remove_from_cart_button">×</a>
+                                </ng-container>
+                            </a>
                                 </div>
 
                               
                             </div>
 
                             <div class="buttons-cart">
-                                <a href="#" class="btn-checkout">
+                                <a href="#" class="btn-checkout" [routerLink]="['/giohang']"  >
                                     Checkout
                                 </a>
 
-                                <a href="cart.html" class="btn-viewcart">
-                                    View Cart
-                                </a>
+                                <a href="cart.html" class="btn-viewcart" >
+                                    View Cart                                </a>
                             </div>	
                         </div>
                     </div>
