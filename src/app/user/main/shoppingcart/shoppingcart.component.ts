@@ -18,6 +18,7 @@ export class ShoppingcartComponent extends BaseComponent implements OnInit {
       this.items = res;
       this.total = 0;
       for(let x of this.items){ 
+        x.money=x.soluong*x.gia;
         this.total += x.soluong * x.gia;
       } 
     })

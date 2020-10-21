@@ -3,6 +3,7 @@ import { BannerComponent } from './../../share/banner/banner.component';
 import { Component, OnInit, Injector} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { CartService } from 'src/app/lib/cart.service';
 @Component({
   selector: 'app-product',
   templateUrl: './allproduct.component.html',
@@ -21,6 +22,10 @@ export class AllproductComponent extends BaseComponent implements OnInit {
         console.log(this.allitem);
       })
     })
+  }
+  add_cart(it){
+    this._cart.addToCart(it);
+    alert('Thêm thành công!'); 
   }
 
 }

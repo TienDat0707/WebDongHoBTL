@@ -103,13 +103,13 @@
                                     <div class="group-button">
                                         <div class="yith-wcwl-add-to-wishlist">
                                             <div class="yith-wcwl-add-button show">
-                                                <a href="#" class="add_to_wishlist">Add to Wishlist</a>
+                                                <a href="#"  class="add_to_wishlist">Add to Wishlist</a>
                                             </div>
                                         </div>
                                         <div class="kreen product compare-button">
                                             <a href="#" class="compare button">Compare</a>
                                         </div>
-                                        <a href="#" class="button yith-wcqv-button">Quick View</a>
+                                        <a class="thumb-link" href="#" [routerLink] = "['/chitietsanpham',it.iD_SP]">>Quick View</a>
                                         <div class="add-to-cart">
                                             <a href="#" class="button product_type_variable add_to_cart_button">Select
                                                 options</a>
@@ -125,7 +125,7 @@
                                                 class="rating">0</strong> out of 5</span></div>
                                         <span class="review">(0)</span></div>
                                     <span class="price"><span class="kreen-Price-amount amount"><span
-                                        class="kreen-Price-currencySymbol"></span>{{it.gia}}</span></span>
+                                        class="kreen-Price-currencySymbol"></span>{{it.gia | currency : "VNĐ"}}</span></span>
                                     <!-- <div class="kreen-product-details__short-description">
                                         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
                                             turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,
@@ -147,7 +147,7 @@
                                         <div class="kreen product compare-button">
                                             <a href="#" class="compare button">Compare</a>
                                         </div>
-                                        <a href="#" class="button yith-wcqv-button">Quick View</a>
+                                        <a class="thumb-link" href="#"[routerLink] = "['/chitietsanpham',it.masp]">">Quick View</a>
                                         <div class="add-to-cart">
                                             <a href="#" class="button product_type_variable add_to_cart_button">Select
                                                 options</a>

@@ -54,7 +54,7 @@
                             </h6>
 
                             <div class="price-product set-color">
-                                <a href="#">{{it.gia}}</a>
+                                <a href="#">{{it.gia | currency : "VNĐ"}}</a>
                             </div>
 
                             <div class="star-product">
@@ -67,11 +67,11 @@
                         </div>
 
                         <div class="buttons-product">
-                            <a href="#" class="btn-addcart set-color">
+                            <a href="#" (click)="add_cart(it)" class="btn-addcart set-color">
                                 Add To Cart +
                             </a>
 
-                            <a class="btn-quickview set-color mfp-inline js-open-popup" href="#quickview-popup-01" title="Quick View">
+                            <a class="btn-quickview set-color mfp-inline js-open-popup" [routerLink] = "['/chitietsanpham',it.iD_SP]" href="#quickview-popup-01" title="Quick View">
                                 <i class="icon-eye"></i>
                             </a>
 

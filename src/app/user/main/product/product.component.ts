@@ -23,5 +23,8 @@ export class ProductComponent extends BaseComponent implements OnInit {
       })
     })
   }
-
+  add_cart(it){
+    this._cart.addToCart(it);
+    alert('Thêm thành công!'); 
+  }
 }

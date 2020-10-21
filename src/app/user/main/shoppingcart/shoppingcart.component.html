@@ -59,20 +59,20 @@
                                     <a href="#">{{sp.ten_SP}}</a></td>
                                 <td class="product-price" data-title="Price">
                                     <span class="kreen-Price-amount amount"><span
-                                            class="kreen-Price-currencySymbol"></span>{{sp.gia}}</span> VNĐ</td>
+                                            class="kreen-Price-currencySymbol"></span>{{sp.gia | currency : "VNĐ"}}</span> </td>
                                 <td class="product-quantity" data-title="Quantity">
                                     <div class="quantity">
                                         <span class="qty-label">Số lượng:</span>
                                         <div class="control">
                                             <input type="text"
-                                                   value="{{sp.soluong}}" #soluong (change)="addQty(sp, soluong.value)" title="Qty" class="input-qty input-text qty text">
+                                                    #soluong   (change)="addQty(sp,soluong.value)" title="Qty" [value]="sp.soluong" class="input-qty input-text qty text">
                                         </div>
                                     </div>
                                 </td>
                                 <td data-title="Subtotal">
                                     <strong><span
                                         class="kreen-Price-amount amount"><span
-                                        class="kreen-Price-currencySymbol"></span>{{sp.money}}</span>VNĐ</strong>
+                                        class="kreen-Price-currencySymbol"></span>{{sp.money| currency : "VNĐ"}}</span></strong>
                                 </td>
                             </tr>
                         </ng-container>                                
