@@ -1,28 +1,25 @@
-import { HttpClientModule } from '@angular/common/http';
-import { ShareModule } from './user/share/share.module';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, enableProdMode } from '@angular/core';
+import { AppRoutingModule } from './app-routing.module';
+import { SharedModule } from './shared/shared.module';
 import { AppComponent } from './app.component';
-import {Routes, RouterModule} from '@angular/router';
-import { from } from 'rxjs';
+import { HomeModule } from './home/home.module';
+import { ProductModule } from './product/product.module';
+import { CustomerModule } from './customer/customer.module';
 
+enableProdMode();
 
-const appreouter : Routes =[
-  {
-    path:'',
-    loadChildren:()=>import('./user/main/main.module').then((m)=>m.MainModule)
-  }
-]
 @NgModule({
   declarations: [
-    AppComponent,
-  
-    
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appreouter),
-    HttpClientModule
+    AppRoutingModule,
+    SharedModule,
+    HomeModule,
+    ProductModule,
+    CustomerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

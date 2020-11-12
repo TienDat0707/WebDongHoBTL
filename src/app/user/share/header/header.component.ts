@@ -1,5 +1,8 @@
 import { BaseComponent } from './../../../lib/base-component';
 import { Component, OnInit, Injector } from '@angular/core';
+import {CartService} from'./../../../lib/cart.service';
+declare let alertify:any;
+
 
 @Component({
   selector: 'app-header',
@@ -8,9 +11,10 @@ import { Component, OnInit, Injector } from '@angular/core';
 })
 export class HeaderComponent extends BaseComponent implements OnInit {
 
-  constructor(private injector :Injector) { 
+  constructor(private injector :Injector , private categoryService: CartService) { 
     super(injector)
   }
+  categories:any;
   item: any;
   itemldm:any;
   itemcart:any;
@@ -32,6 +36,7 @@ export class HeaderComponent extends BaseComponent implements OnInit {
         })
       })
     }) 
+    // this.categoryService.getItems.pipe(first()).subscribe((categories)=>{this.categories=categories})
     this._cart.items.subscribe(res=>{
       this.itemcart = res;
       console.log(res);

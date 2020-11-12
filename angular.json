@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "WebDongHoBTL": {
+    "DangQuangUser": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/WebDongHoBTL",
+            "outputPath": "dist/DangQuangUser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,9 +24,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/alertifyjs/build/css/alertify.min.css"
+              // "./node_modules/alertifyjs/build/css/theme/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/alertifyjs/build/alertify.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -62,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "WebDongHoBTL:build"
+            "browserTarget": "DangQuangUser:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "WebDongHoBTL:build:production"
+              "browserTarget": "DangQuangUser:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "WebDongHoBTL:build"
+            "browserTarget": "DangQuangUser:build"
           }
         },
         "test": {
@@ -110,19 +114,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "WebDongHoBTL:serve"
+            "devServerTarget": "DangQuangUser:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "WebDongHoBTL:serve:production"
+              "devServerTarget": "DangQuangUser:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "WebDongHoBTL",
+  "defaultProject": "DangQuangUser",
   "cli": {
-    "analytics": "e82c1d17-c216-4ded-870d-c4cced2ca662"
+    "analytics": "8df884cf-9e89-4464-9e54-7f3361cc14f6"
   }
 }
